@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+
+body{
+    font-family: 'Mandali', Verdana, sans-serif;
+}
+
+header{
+    background-image: url(../img/home-background.webp);
+    background-size: cover;
+}
+
+.logo{
+    font-family: 'Bungeeshade', Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+}
+
+h1{
+    padding-top: 5rem;
+    text-align:center;
+    letter-spacing: 0.3rem;
+}
+
+h2{
+    font-family: 'Lato', Verdana, sans-serif;
+    font-weight: normal;
+    text-align:center;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    color: #3c3c3c;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+}
+
+h3{
+    padding-top: 2rem;
+    text-align:center;
+    font-size: 2rem;
+    letter-spacing: 0;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container{
+    position:relative;
+    overflow: hidden;
+}
+
+.img-wrapper{
+    z-index:1;
+    position:absolute;
+    bottom: 0;
+}
+
+.container p{
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'Corinthia', Verdana, sans-serif;
+    letter-spacing: 2.5rem;
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+
+
+#computer-img{
+    max-width:50%;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+   grid-area: c;
+}
+
+.d{
+   grid-area: d; 
+}
+
+nav{
+    text-align: center;
+    padding:1.5rem 1rem;
+    font-size: 1.1rem;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
