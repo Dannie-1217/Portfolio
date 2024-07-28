@@ -13,14 +13,14 @@
 
 <body>
     <header>
-        <div id="sticky-bar">
+        <!-- <div id="sticky-bar"> -->
             <nav class="grid nav-grid">
                 <a class="a logo" href="homepage.html">DC</a>
                 <a class="b" href="#">Portfolio</a>
                 <a class="c" href="#">About</a>
                 <a class="d" href="#">Contact</a>
             </nav>
-        </div>
+        <!-- </div> -->
 
         <h1>DANNI CHEN</h1>
         <h2>Web Developer, Programmer, Software Developer, Game Developer</h2>
@@ -34,10 +34,52 @@
 
     </header>
 
-    <h3>Portfolio</h3>
+    <main>
 
-    <section>
+    <h3>PORTOFOLIO</h3>
 
+    <section class="portfolio-card">
+        <a href="#" class=" grid portfolio-card-grid-left card-container">
+            <div class="project-img-wrapper">
+                <img src="img/project1.jpg" hieght="722" width="1284" alt="Three students are interacing with the installation">
+                <div class="overlay"></div>
+            </div>
+            <div class="detail-wrapper">
+                <h4>MELODIC INK</h4>
+                <p class="work-subtitle">Interactive Art Installation with Techlogical System</p>
+            </div>
+        </a>
     </section>
+
+    <section class="portfolio-card">
+        <a href="#" class=" grid portfolio-card-grid-right card-container">
+            <div class="detail-wrapper">
+                <h4>GARAGE WEB</h4>
+                <p class="work-subtitle">Company Web Design and Development</p>
+            </div>
+            <div class="project-img-wrapper">
+                <img src="img/project2.jpg" hieght="1225" width="2232" alt="A webpage for clothing brand Garage">
+                <div class="overlay"></div>
+            </div>
+        </a>
+    </section>
+
+    <section class="portfolio-card">
+        <a href="#" class=" grid portfolio-card-grid-left card-container">
+            <div class="project-img-wrapper">
+                <img src="img/project3.jpg" hieght="1554" width="2762" alt="An electrical educational toy">
+                <div class="overlay"></div>
+            </div>
+            <div class="detail-wrapper">
+                <h4>ENVIROSAVER</h4>
+                <p class="work-subtitle">Education Toy with Technological System</p>
+            </div>
+        </a>
+    </section>
+
+    </main>
+
+
+    <script src="js/navigation.js"></script>
 </body>
 </html>
