@@ -19,6 +19,24 @@
     line-height: 0.7;
 }
 
-.about-container-grid{
+.about-container-grid-part1{
     grid-template-columns: 1fr 1fr;
+}
+
+.about-container-grid-part2{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.interests-card-grid{
+    grid-template-columns: 1fr 6fr;
+    column-gap: 2rem;
+}
+
+.contact-part1-grid{
+    grid-template-columns: 1fr 1fr;
+}
+
+.welcome-grid{
+    grid-template-columns: 2.5fr 1.5fr;
 }

@@ -13,57 +13,43 @@
 
 <body>
     <header>
-        <!-- <div id="sticky-bar"> -->
-            <nav class="grid nav-grid">
-                <a class="a logo" href="homepage.html">DC</a>
-                <a class="b" href="#">About</a>
-                <a class="c" href="#">Portfolio</a>
-                <a class="d" href="#">Contact</a>
-            </nav>
-        <!-- </div> -->
-
-        <h1>DANNI CHEN</h1>
-        <h2>Web Developer, Programmer, Software Developer, Game Developer</h2>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b" href="#about-section">About</a>
+            <a class="c" href="#portfolio-section">Portfolio</a>
+            <a class="d" href="#contact-section">Contact</a>
+        </nav>
 
         <div class="container">
-            <div class="img-wrapper">
-                <!-- <img id="computer-img" src="img/computer.webp" width="1920" height="1080" alt="Hands on laptop keyboard"> -->
-                <img id="computer-img" src="img/cc1.png" width="1920" height="1080" alt="Hands on laptop keyboard">
-
+            <div class="grid welcome-grid welcome-content">
+                <div class="welcome-text">
+                    <h1>DANNI CHEN</h1>
+                    <h2>Seeking Web & Software Development or Interaction Design Position</h2>
+                    <div class="button-div" id="welcome-button">
+                        <a class="button" href="#contact-section">Contact Me</a>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img id="girl-img" src="img/girl.png" width="3656" height="3728" alt="A girl is woking on her laptop">
+                </div>
             </div>
-            <p>Danni Chen</p>
+            <div class="background-text-wrapper">
+                <div class="background-text">
+                <p>Danni Chen Danni Chen Danni Chen</p>
+                <p>Danni Chen Danni Chen Danni Chen</p>
+                </div>
+            </div>
         </div>
 
     </header>
 
     <main>
-        
-        <!-- <section id="about-section">
-            <h3>ABOUT</h3>
-                <div class="grid about-container-grid">
-                    <div class="bio-container">
-                        <div class="bio-content-wrapper">
-                            <p>BIOGRAPHY</p>
-                            <h4>My Personal Description</h4>
-                            <p>I am from Sichuan, China, and currently studying as an international student at Simon Fraser University. I am enrolled in the SIAT program, focusing on interactive systems, with a current GPA of 3.3.</p>
-                            <p>With a strong foundation in programming, including Java, JavaScript, C++, Processing, Arduino, HTML, and CSS, I navigate the digital landscapes as both creator and programmer. My passion lies in designing games and interactive installations that require technology. Additionally, my proficiency in UX and UI design also allows me to create user-centered designs that focus on usability,  accessibility, and overall satisfaction. I consistently excel in projects that demand a programming foundation, and I can integrate my knowledge of UX and UI to provide users with a more engaging digital experience. </p>
-                            </div>
-                    </div>
-                    <div class="interests-container">
-                        <div class="interests-content-wrapper">
-                        <p>INTERESTS</p>
-                        <h4>My Employment Preference</h4>
-                        <p>asdfasdf</p>
-                        </div>
-                    </div>
-            </div>
-        </section> -->
 
         <section id="about-section">
-            <h3>ABOUT</h3>
-                <div class="grid about-container-grid">
-                    <div><img src="img/bio4.png" width="803" height="724" alt="a photo of Danni Chen"></div>
-                    <div class="bio-container">
+            <h3 class="reveal right">ABOUT</h3>
+                <div class="grid about-container-grid-part1">
+                    <div class="reveal left"><img src="img/bio4.png" width="803" height="724" alt="a photo of Danni Chen"></div>
+                    <div class="bio-container reveal right">
                         <div class="bio-content-wrapper">
                             <div class="hello-line-container">
                                 <p id="text-before-line">Hello</p>
@@ -74,15 +60,51 @@
                             <h4>My Personal Description</h4>
                             <p>I am from Sichuan, China, and currently studying as an international student at Simon Fraser University. I am enrolled in the SIAT program, focusing on interactive systems, with a current GPA of 3.3.</p>
                             <p>With a strong foundation in programming, including Java, JavaScript, C++, Processing, Arduino, HTML, and CSS, I navigate the digital landscapes as both creator and programmer. My passion lies in designing games and interactive installations that require technology. Additionally, my proficiency in UX and UI design also allows me to create user-centered designs that focus on usability,  accessibility, and overall satisfaction. I consistently excel in projects that demand a programming foundation, and I can integrate my knowledge of UX and UI to provide users with a more engaging digital experience. </p>
+                            
                             </div>
-                            </div>
+                            <!-- <div class="button-div">
+                                <a class="button" href="#contact-section">Contact Me</a>
+                            </div> -->
+                        </div>
                     </div>
+                </div>
+            <h4 class="reveal">What Do I Do and How</h4>
+            <div class="grid about-container-grid-part2 interests-container reveal">
+                <div>
+                    <h5>Web Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/web-icon.png" width="200" height="206" alt="Icon of Computer">
+                        <p>I design and develop websites using HTML, CSS, and JavaScript. This includes creating user-centered designs that focus on usability and accessibility, ensuring that users have a seamless and engaging experience.</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Game Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/game-icon.png" width="200" height="197" alt="Icon of Game">
+                        <p>I create data-driven gameplay systems using C++, Java, and Processing. These projects demonstrate my ability to design interactions between users and the system, improving efficiency and enhancing the gaming experience.</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Software Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/software-icon.png" width="200" height="204" alt="Icon of Java">
+                        <p>I have experience in both server-side and client-side development, enabling effective communication between the two ends. This includes handling server-client interactions, developing backend services, and ensuring smooth data exchange, which is crucial for creating robust and efficient applications.</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Interactive Systems Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/interactive-icon.png" width="200" height="200" alt="Icon of Robot">
+                        <p>In my role as an interactive systems developer, I utilize technologies like Processing and Arduino to create interactive installations. These projects involve integrating hardware and software to develop immersive and interactive experiences, demonstrating my ability to bring innovative concepts to life through technology.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-        <section id="portfolio-section">    
+        <section id="portfolio-section" class="reveal">    
             <h3>PORTFOLIO</h3>
+
             <section class="portfolio-card">
                 <a href="#" class=" grid portfolio-card-grid-left card-container">
                     <div class="project-img-wrapper">
@@ -123,6 +145,54 @@
             </section>
         </section>
 
+        <section id="contact-section">
+            <h3 class="reveal">CONTACT</h3>
+            <div class="contact-part1 grid contact-part1-grid reveal">
+                <div class="lets-talk">
+                    <h4>LET'S TALK!</h4>
+                    <p>I am currently seeking a job to support myself, and I am eager to take on any opportunity related to interaction design and programming. If you need assistance, please feel free to contact me. I am always available and ready to work!</p>
+                    <div class="detail-information">
+                        <h5>Email Me At</h5>
+                        <p>dca158@sfu.ca</p>
+                        <p>danni1217@icloud.com</p>
+                        <h5>Call Me At</h5>
+                        <p>Canada: (+1) 778-998-1116</p>
+                        <p>China: (+86) 138-8000-6789</p>
+                        <h5>Mail Me At</h5>
+                        <p>13696 100th Ave, Surrey, BC, V3T 0L5 </p>
+                    </div>
+                    <div class="external-link">
+                        <a href="#" class="ins"><div class="instagram-icon"><img class="placeholder" src="img/instagram.png" width="30" heigh="30" alt="link to instagram page of Danni"></div></a>
+                        <a href="#" class="whatsapp"><div class="whatsapp-icon"><img class="placeholder" src="img/whatsapp.png" width="30" heigh="30" alt="link to whatsapp page of Danni"></div></a>
+                        <a href="#" class="youtube"><div class="youtube-icon"><img class="placeholder" src="img/youtube.png" width="30" heigh="30" alt="link to youtube page of Danni"></div></a>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="contact-form">
+                        <form method="post" action="#">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Jack Smith">
+                        </form>
+                        <form method="post" action="#">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" placeholder="Jane@example.com">
+                        </form>
+                        <form method="post" action="#">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" placeholder="123-456-7890">
+                        </form>
+                        <form method="post" action="#">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Leave a comment."></textarea>
+                        </form>
+                        <div class="submit-div">
+                            <a class="submit-button" href="#contact-section">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -131,5 +201,6 @@
 
 
     <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
 </body>
 </html>
