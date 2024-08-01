@@ -211,6 +211,7 @@ body{
         background-color: black;
     }
     
+
     .card-container:hover .overlay, .card-container:focus .overlay{
         opacity: 1;
     }
@@ -734,7 +735,6 @@ body{
 
 
     .sticky{
-        background-color: white;
         border-bottom: #b0b0b0 solid 1px;
         padding: 0.5rem 0.8rem;
     }
@@ -779,9 +779,13 @@ body{
     }
     
     h4{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         transition: background-color 0.3s ease-in-out;
         letter-spacing: 0.05rem;
+    }
+
+    h5{
+        font-size: 0.9rem;
     }
     
     .work-subtitle{
@@ -930,7 +934,6 @@ body{
     
     .card-container{
         transition: background-color 0.3s ease-in-out;
-        background-color: #f2f2f3;
     }
     
     .overlay{
@@ -977,7 +980,7 @@ body{
         padding-left:10%;
         margin-top: 5%;
         margin-bottom: 5%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     #bio-bold{
@@ -1110,6 +1113,7 @@ body{
         margin-left:10%;
         margin-right: 5%;
         margin-top:10%;
+        padding: 0;
         color:white;
         font-family: 'Lato', Verdana, sans-serif;
         background-image: none;
@@ -1342,7 +1346,6 @@ body{
 @media(min-width:80rem){
 
 .sticky{
-    background-color: white;
     border-bottom: #b0b0b0 solid 1px;
     padding: 0.8rem;
 }
@@ -1528,7 +1531,6 @@ section{
 
 .card-container{
     transition: background-color 0.3s ease-in-out;
-    background-color: #f2f2f3;
 }
 
 .overlay{
