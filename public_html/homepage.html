@@ -15,10 +15,23 @@
     <header>
         <nav class="grid nav-grid">
             <a class="a logo" href="homepage.html">DC</a>
-            <a class="b" href="#about-section">About</a>
-            <a class="c" href="#portfolio-section">Portfolio</a>
-            <a class="d" href="#contact-section">Contact</a>
+            <a class="b nav-link" href="#about-section">About</a>
+            <a class="c nav-link" href="#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
         </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link" href="#about-section">About</a>
+            <a class="nav-link" href="#portfolio-section">Portfolio</a>
+            <a class="nav-link" href="#contact-section">Contact</a>
+        </div>
 
         <div class="container">
             <div class="grid welcome-grid welcome-content">
@@ -48,7 +61,15 @@
         <section id="about-section">
             <h3 class="reveal right">ABOUT</h3>
                 <div class="grid about-container-grid-part1">
-                    <div class="reveal left"><img src="img/bio4.png" width="803" height="724" alt="a photo of Danni Chen"></div>
+                    <div class="reveal left">
+                        <picture>
+                            <source media="(min-width: 80rem)" srcset="img/bio.png">
+                            <source media="(min-width: 48rem)" srcset="img/bio-1279.png">
+                            <source media="(min-width: 20rem)" srcset="img/bio-767.png">
+                            
+                            <img src="img/bio.png" width="803" height="724" alt="a photo of Danni Chen">
+                        </picture>
+                    </div>
                     <div class="bio-container reveal right">
                         <div class="bio-content-wrapper">
                             <div class="hello-line-container">
@@ -62,9 +83,6 @@
                             <p>With a strong foundation in programming, including Java, JavaScript, C++, Processing, Arduino, HTML, and CSS, I navigate the digital landscapes as both creator and programmer. My passion lies in designing games and interactive installations that require technology. Additionally, my proficiency in UX and UI design also allows me to create user-centered designs that focus on usability,  accessibility, and overall satisfaction. I consistently excel in projects that demand a programming foundation, and I can integrate my knowledge of UX and UI to provide users with a more engaging digital experience. </p>
                             
                             </div>
-                            <!-- <div class="button-div">
-                                <a class="button" href="#contact-section">Contact Me</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -120,11 +138,11 @@
 
             <section class="portfolio-card">
                 <a href="#" class=" grid portfolio-card-grid-right card-container">
-                    <div class="detail-wrapper">
+                    <div class="detail-wrapper  bottom-area">
                         <h4>GARAGE WEB</h4>
                         <p class="work-subtitle">Company Web Design and Development</p>
                     </div>
-                    <div class="project-img-wrapper">
+                    <div class="project-img-wrapper  top-area">
                         <img src="img/project2.jpg" hieght="1225" width="2232" alt="A webpage for clothing brand Garage">
                         <div class="overlay"></div>
                     </div>
@@ -170,7 +188,7 @@
                 <div class="information">
                     <div class="contact-form">
                         <form method="post" action="#">
-                            <label for="name">Name</label>
+                            <label for="name" class="first-label">Name</label>
                             <input type="text" id="name" placeholder="Jack Smith">
                         </form>
                         <form method="post" action="#">
@@ -202,5 +220,6 @@
 
     <script src="js/navigation.js"></script>
     <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
 </body>
 </html>
