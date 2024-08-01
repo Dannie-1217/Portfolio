@@ -681,6 +681,10 @@ body{
         transition-duration: 0.8s;
     }
 
+    .mobile-menu-element{
+        display: none;
+    }
+
     .mobile-menu a{
         color:white;
         padding-top: 0.25rem ;
@@ -695,6 +699,10 @@ body{
     .mobile-menu.active {
         display:flex;
         top:0;
+    }
+
+    .mobile-menu.active .mobile-menu-element{
+        display: block;
     }
    
 }
