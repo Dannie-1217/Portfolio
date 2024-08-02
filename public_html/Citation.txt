@@ -15,3 +15,6 @@ YouTube. (2020, October 31). Reveal website elements on scroll | on page scroll 
 YouTube. (2021, August 15). JavaScript - how to create a responsive hamburger menu with HTML, CSS, & javascript. YouTube. https://www.youtube.com/watch?v=flItyHiDm7E 
 YouTube. (2022, December 15). Infinite scrolling text with CSS. YouTube. https://www.youtube.com/watch?v=WFzquzZic2o 
 YouTube. (2022, June 26). CSS button hover effects | left to right hover effects | CSS hover effects @codehal . YouTube. https://www.youtube.com/watch?v=NiAbqxoKZOM 
+
+GitHub-link:
+https://github.sfu.ca/iat339/Project3
