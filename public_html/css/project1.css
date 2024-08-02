@@ -1,5 +1,9 @@
 @media(min-width:20rem){
 
+    #video-description{
+        display: none;
+    }
+
     main{
         width: 80%;
         margin-left: auto;
@@ -81,7 +85,7 @@
 
 @media(min-width:48rem){
     h1{
-        font-weight: 1.5rem;
+        font-size: 1.5rem;
         padding-top: 5rem;
     }
 
