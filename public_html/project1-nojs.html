@@ -6,37 +6,25 @@
     <title>Danni Chen's Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="css/project1.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage-nojs.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-nojs.css">
+    <link rel="stylesheet" type="text/css" href="css/grid-nojs.css">
     <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
-    <noscript id="nojs">
-        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
-    </noscript>
+
+    <script>
+        window.location.replace('project1.html');
+    </script>
 </head>
 
 <body>
     <header>
-        <nav class="grid nav-grid">
-            <a class="a logo" href="homepage.html">DC</a>
-            <a class="b nav-link" href="homepage.html#about-section">About</a>
-            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
-            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
-            <div class="hamburger e">
-                <button class="hamburger-icon">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </div>
+        <nav class="grid nav-grid sticky">
+            <a class="a logo" href="homepage-nojs.html">DC</a>
+            <a class="b" href="homepage-nojs.html#about-section">About</a>
+            <a class="c" href="homepage-nojs.html#portfolio-section">Portfolio</a>
+            <a class="d" href="homepage-nojs.html#contact-section">Contact</a>
         </nav>
-
-        <div class="mobile-menu">
-            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
-            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
-            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
-        </div>
 
     </header>
 
@@ -50,7 +38,7 @@
         <p>For my IAT222 final project, inspired by Joo Youn Paek's innovative approach to merging technology and design, our team created an interactive art piece that combined visual, auditory, and physical elements.</p>
 
         <section>
-            <div class="reveal">
+            <div>
                 <div class="grid step-grid step">
                     <p>01</p>
                     <p>Conceptualization</p>
@@ -67,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="reveal">
+            <div>
                 <div class="grid step-grid step">
                     <p>02</p>
                     <p>Design and Prototyping</p>
@@ -85,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="reveal">
+            <div>
                 <div class="grid step-grid step">
                     <p>03</p>
                     <p>Iteration and Development</p>
@@ -101,7 +89,7 @@
             
             </div>
 
-            <div class="reveal">
+            <div>
                 <div class="grid step-grid step">
                     <p>04</p>
                     <p>Final Product</p>
@@ -120,7 +108,7 @@
             </div>
         </section>
 
-        <section class="other-work reveal">
+        <section class="other-work">
             <h3>Other Work</h3>
             <div class="grid other-work-grid">
                 <div>
@@ -152,8 +140,5 @@
     </main>
 
 
-    <script src="js/navigation.js"></script>
-    <script src="js/reveal.js"></script>
-    <script src="js/navigation-mobile.js"></script>
 </body>
 </html>

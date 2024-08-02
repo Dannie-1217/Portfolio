@@ -26,7 +26,7 @@ function revealFunction(){
 
 var reveals = document.querySelectorAll('.reveal');
 
-console.log(reveals[5].getBoundingClientRect().top);
+console.log(reveals[0].getBoundingClientRect().top);
 console.log(window.innerHeight)
 
 revealFunction();

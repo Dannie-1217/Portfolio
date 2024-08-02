@@ -6,36 +6,23 @@
     <title>Danni Chen's Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage-nojs.css">
+    <link rel="stylesheet" type="text/css" href="css/grid-nojs.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
 
-    <noscript id="nojs">
-        <meta http-equiv = "refresh" content = "0; url = homepage-nojs.html" />
-    </noscript>
+    <script>
+        window.location.replace('homepage.html');
+    </script>
 </head>
 
 <body>
     <header>
-        <nav class="grid nav-grid">
+        <nav class="grid nav-grid sticky">
             <a class="a logo" href="homepage.html">DC</a>
-            <a class="b nav-link" href="#about-section">About</a>
-            <a class="c nav-link" href="#portfolio-section">Portfolio</a>
-            <a class="d nav-link" href="#contact-section">Contact</a>
-            <div class="hamburger e">
-                <button class="hamburger-icon">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </div>
+            <a class="b" href="#about-section">About</a>
+            <a class="c" href="#portfolio-section">Portfolio</a>
+            <a class="d" href="#contact-section">Contact</a>
         </nav>
-
-        <div class="mobile-menu">
-            <a class="nav-link mobile-menu-element" href="#about-section">About</a>
-            <a class="nav-link mobile-menu-element" href="#portfolio-section">Portfolio</a>
-            <a class="nav-link mobile-menu-element" href="#contact-section">Contact</a>
-        </div>
 
         <div class="container">
             <div class="grid welcome-grid welcome-content">
@@ -63,10 +50,10 @@
     <main>
 
         <section id="about-section">
-            <h3 class="reveal right">ABOUT</h3>
+            <h3>ABOUT</h3>
                 <div class="grid about-container-grid-part1">
-                    <div class="reveal left">
-                        <picture>
+                    <div>
+                        <picture  id="photo">
                             <source media="(min-width: 80rem)" srcset="img/bio.png">
                             <source media="(min-width: 48rem)" srcset="img/bio-1279.png">
                             <source media="(min-width: 20rem)" srcset="img/bio-767.png">
@@ -74,7 +61,7 @@
                             <img src="img/bio.png" width="803" height="724" alt="a photo of Danni Chen">
                         </picture>
                     </div>
-                    <div class="bio-container reveal right">
+                    <div class="bio-container">
                         <div class="bio-content-wrapper">
                             <div class="hello-line-container">
                                 <p id="text-before-line">Hello</p>
@@ -90,8 +77,8 @@
                         </div>
                     </div>
                 </div>
-            <h4 class="reveal">What Do I Do and How</h4>
-            <div class="grid about-container-grid-part2 interests-container reveal">
+            <h4>What Do I Do and How</h4>
+            <div class="grid about-container-grid-part2 interests-container">
                 <div>
                     <h5>Web Development</h5>
                     <div class="grid interests-card-grid">
@@ -124,7 +111,7 @@
         </section>
 
 
-        <section id="portfolio-section" class="reveal">    
+        <section id="portfolio-section">    
             <h3>PORTFOLIO</h3>
 
             <section class="portfolio-card">
@@ -168,8 +155,8 @@
         </section>
 
         <section id="contact-section">
-            <h3 class="reveal">CONTACT</h3>
-            <div class="contact-part1 grid contact-part1-grid reveal">
+            <h3>CONTACT</h3>
+            <div class="contact-part1 grid contact-part1-grid">
                 <div class="lets-talk">
                     <h4>LET'S TALK!</h4>
                     <p>I am currently seeking a job to support myself, and I am eager to take on any opportunity related to interaction design and programming. If you need assistance, please feel free to contact me. I am always available and ready to work!</p>
@@ -217,9 +204,5 @@
 
     </main>
 
-    
-    <script src="js/navigation.js"></script>
-    <script src="js/reveal.js"></script>
-    <script src="js/navigation-mobile.js"></script>
 </body>
 </html>
