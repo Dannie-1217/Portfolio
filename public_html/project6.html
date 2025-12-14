@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css"> 
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+    </header>
+
+   <main>
+        <h1>STYLE SKETCH</h1>
+        <h2> Interactive Painting with Intelligent Generation</h2>
+
+         <img src="img/project6.jpg" width="1920" height="1080" alt="The gallery of Style Sketch">
+        <div id="video-description">
+            <h2>Video Description</h2>
+            <p>A demonstration of the Garage e-commerce website functionality including browsing, cart interaction, and checkout.</p>
+        </div>
+
+        <p>A project for IAT 461: Generative AI and Computational Creativity — an interactive sketch-to-image system that lets users draw, write prompts, and instantly generate stylized AI paintings.</p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Introduction</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div> 
+                    <div>
+                        <p>StyleSketch is an interactive AI drawing system that combines Sketch + Prompt to generate fully stylized images using Stable Diffusion, ControlNet-like structure guidance, and LoRA style modules. Users can draw a sketch, write a prompt, enhance it with an optional AI model (Mistral-7B), 
+                        and generate results in different art styles instantly.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p6_intro.jpg" width="1920" height="1200" alt="Sketch, prompt, and generated image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Sketch-to-Image Pipeline</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>Users draw a sketch on the canvas or upload an image. StyleSketch processes the sketch and feeds it into a Stable Diffusion img2img pipeline with structure-aware guidance. This allows users to control both the composition and the creative direction of the final image.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p6_pipeline.png" width="1920" height="1200" alt="the sketch-to-image pipeline">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>Prompt Enhancement(Mistral-7B)</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>To support beginners, StyleSketch includes an optional prompt enhancer powered by a locally quantized Mistral-7B (4-bit) model. With a single toggle, the system rewrites the user's prompt into a richer, more descriptive version—
+                        helping produce more detailed and consistent images.
+                        </p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p6_prompt_enhancement.png" width="1920" height="1200" alt="Generated pictures from original prompt and enhanced AI prompt">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>LoRA Style Switching</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The system supports dynamic LoRA loading, allowing users to switch between multiple art styles such as Van Gogh, Cyberpunk, and Clay Animation. Each style is applied instantly without restarting the model pipeline, creating a playful real-time exploration experience.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                         <img class="popup-trigger" src="img/p6_lora.png" width="1920" height="1200" alt="Three pictures generated from different art styles.">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>05</p>
+                    <p>Interactive UI & Workflow Design</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The interface was designed to encourage a co-creative workflow. Users can draw, write prompts, adjust parameters, preview results, and iterate quickly. This focus on interaction transforms the model from a static generator into an intuitive visual playground.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                         <img class="popup-trigger" src="img/p6_interface.jpg" width="1920" height="1200" alt="The interface of Style Sketch">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+
+                    <div class="card card-container">
+                        <a href="project4.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project4.jpg" alt="SpotShare Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>SPOTSHARE</h4>
+                                <p class="work-subtitle">Multimedia & Location Tracking App</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project5.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project5.png" alt="FurEver Friends Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>FUREVER FRIENDS</h4>
+                                <p class="work-subtitle">Full-stack Intelligent Pet Adoption Platform</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project7.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project7.jpg" alt="bank campaign prediction website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>BANK CAMPAIGN PREDICTION</h4>
+                                <p class="work-subtitle">Predicting Term Deposit Subscription</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card card-container">
+                        <a href="project1.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project1.jpg" alt="Melodic Ink Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>MELODIC INK</h4>
+                                <p class="work-subtitle">Interactive Art Installation with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project2.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project2.png" alt="Garage Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>GARAGE WEB</h4>
+                                <p class="work-subtitle">Company Web Design and Development</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project3.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/p3_title.png" alt="EnviroSaver Toy">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>ENVIROSAVER</h4>
+                                <p class="work-subtitle">Educational Toy with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
+
+        <div id="img-popup" class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+    <script src="js/otherWorkCarousel.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

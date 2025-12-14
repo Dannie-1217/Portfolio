@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Marketing Data Analysis Project</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css"> 
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+    </header>
+
+   <main>
+        <h1>BANK MARKETING CAMPAIGN PREDICTION</h1>
+        <h2>Predicting Term Deposit Subscription</h2>
+
+         <img src="img/project7.jpg" width="1920" height="1080" alt="Project Main Visual: Feature Importance Comparison">
+        <div id="video-description">
+            <h2>Project Goal</h2>
+            <p>To identify which customer and activity characteristics (such as call duration, financial status, and historical activity) most strongly predict term deposit subscription success.</p>
+        </div>
+
+        <p>This final project for IAT 461: Data Science for Interactive Systems analyzes 45,211 bank marketing call records, addresses the 11.7% class imbalance, and builds Logistic Regression and Decision Tree models. Completed as a two-person team, with both members fully participating in every stage of the work.</p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Exploratory Data Analysis & Challenges</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div> 
+                    <div>
+                        <p>Preliminary analysis revealed a strong class imbalance, with roughly a 9:1 ratio between non-subscribers and subscribers. This issue was addressed during model training using balanced class weights and stratified cross-validation. The EDA also highlighted meaningful differences across key numerical features, including call duration, account balance, and past campaign outcomes.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p7_challenge.png" width="1920" height="1200" alt="EDA Key Insight: target variable distribution pie chart">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Feature Engineering & Model Preparation</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>To improve predictive performance, several additional features were engineered to capture seasonal patterns, contact behavior, and previous interactions. During data preparation, appropriate encoding and scaling techniques were applied based on each model's requirements.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p7_feature.jpg" width="1920" height="1200" alt="Feature Engineering">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>Model Training & Validation</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>Both Logistic Regression and Decision Tree models were trained. Logistic Regression demonstrated superior stability and consistency across three validation methods (Train-Test, K-Fold, and Stratified K-Fold).<br> The Decision Tree model was optimized using Grid Search, although depth analysis revealed a slight tendency toward overfitting.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p7_LR_Validation.png" width="1920" height="1200" alt="LR Model Validation: Stratified K-Fold Results">
+                        <img class="popup-trigger" src="img/p7_DT_Validation.png" width="1920" height="1200" alt="DT Model Validation">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>Key Feature Analysis & Quantified Insights</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>Both models consistently highlighted call duration as the most influential predictor of subscription.<br>
+                        Logistic Regression indicated that longer calls and positive prior outcomes increased the likelihood of subscribing, while certain customer attributes and frequent contact attempts were associated with lower probabilities.<br>
+                        The Decision Tree uncovered clear business rules as well — for example, customers with longer call interactions showed noticeably higher subscription rates.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                         <img class="popup-trigger" src="img/p7_lr_res.png" width="1920" height="1200" alt="Key Feature Comparison: LR Coefficients">
+                         <img class="popup-trigger" src="img/p7_dt_res.png" width="1920" height="1200" alt="Key Feature Comparison: DT Importance">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>05</p>
+                    <p>Business Recommendations & Conclusion</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The final recommendation is that the bank should prioritize a "quality over quantity" strategy.
+                        Call Quality: Set sales targets for conversations longer than 4 minutes, investing in training agents on advanced conversational skills.
+                        Customer Targeting: Strategically target customers without existing loans (e.g., housing loans) and those with tertiary education, as they are significantly more likely to subscribe.
+                        Dual-Model Strategy: Use Logistic Regression for precise customer scoring and prioritization, while using the Decision Tree's intuitive rules to guide operational decisions.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                         <img class="popup-trigger" src="img/p7_conclusion.jpg" width="1920" height="1200" alt="Final conclusion and business recommendations">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+
+                    <div class="card card-container">
+                        <a href="project4.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project4.jpg" alt="SpotShare Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>SPOTSHARE</h4>
+                                <p class="work-subtitle">Multimedia & Location Tracking App</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project5.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project5.png" alt="FurEver Friends Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>FUREVER FRIENDS</h4>
+                                <p class="work-subtitle">Full-stack Intelligent Pet Adoption Platform</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project6.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project6.jpg" alt="style sketch Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>STYLE SKETCH</h4>
+                                <p class="work-subtitle">Interactive Painting with Intelligent Generation</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project1.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project1.jpg" alt="Melodic Ink Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>MELODIC INK</h4>
+                                <p class="work-subtitle">Interactive Art Installation with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project2.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project2.png" alt="Garage Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>GARAGE WEB</h4>
+                                <p class="work-subtitle">Company Web Design and Development</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project3.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/p3_title.png" alt="EnviroSaver Toy">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>ENVIROSAVER</h4>
+                                <p class="work-subtitle">Educational Toy with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
+
+        <div id="img-popup" class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+    <script src="js/otherWorkCarousel.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

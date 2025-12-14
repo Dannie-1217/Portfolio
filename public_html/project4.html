@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+
+    </header>
+
+   <main>
+        <h1>SpotShare</h1>
+        <h2>Multimedia & Location Tracking App</h2>
+        <video width="1920" height="1080" controls aria-describedby="video-description">
+            <source src="video/project4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="video-description">
+            <h2>Video Description</h2>
+            <p>Three students are interacting with the melodic ink installation</p>
+        </div>
+        <p>Developed individually for my IAT 359: Mobile Computing course, SpotShare is a mobile application designed to help users capture and explore popular food, scenery, and entertainment spots through multimedia sharing and location-based features.</p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Introduction</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>SpotShare is a mobile application designed to share experiences of food, scenery, and popular entertainment spots. The primary purpose of SpotShare is to help users easily capture and explore popular places through multimedia sharing. By integrating features like photos, text, geographic location (GPS), and weather data, the app enables users to showcase their favorite spots in an intuitive and visually engaging way.</p>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p4_intro.png" width="1920" height="1249" alt="Demo image of the SpotShare app">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Authentication Module</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>SpotShare integrates Firebase Authentication to manage user sign-up and login processes. This ensures that only authenticated users can access the app's features and store data (e.g., user profiles, posts)</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p4_auth.png" width="1920" height="1176" alt="The project painting with led light and reed switch">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>APIs Integration</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p><b>Google Places API:</b> <br>
+                            SpotShare integrates the Google Places API to allow users to search for and select locations for their posts. This API ensures users can find accurate place names instead of dealing with raw latitude and longitude.</p>
+                        <p><b>OpenWeather API:</b> <br>
+                            SpotShare integrates OpenWeather API to fetch the current weather data based on the location of their posts. This information is displayed alongside posts to provide users with context about the weather at the location they are sharing.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p4_api_places.png" width="1920" height="1290" alt="Google Places API allows users to search for and select locations for their posts">
+                        <img class="popup-trigger" src="img/p4_api_weather.png" width="1920" height="1292" alt="OpenWeather AIP allows users to display weather informtion">
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>Data Storage</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p><b>Local Storage:</b> <br>
+                            User login information is stored locally using AsyncStorage, ensuring that users stay logged in even when the app is reopened after being sent to the background or the device restart. This improves the app's usability by providing a login experience without requiring repeated authentication.
+                        </p>
+                        <p><b>Structured Data: </b> <br>
+                           Most of the app's structured data, such as user profiles and post information is stored in Firestore. Uploaded images are stored in Firebase Storage. The image URLs are linked back to the corresponding user data in the Firestore. With data stored in Firestore and Firebase Storage, SpotShare supports multiple users and devices, and users can easily fetch real-time data. 
+                        </p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                            <img class="popup-trigger" src="img/p4_data_storage.png" width="1920" height="1208" alt="data structure">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>05</p>
+                    <p>Google Maps Integration</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>Users can access a detailed map view showing their current location and nearby posts. Posts are displayed as customized markers, visually distinguishing them from the user's location and other icons on the map.
+                        </p>
+                        <p>A customized map theme has also been applied, so it has a consistent color scheme with the app's overall interface design. User can also interact with the markers to view additional information about each post.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                            <img class="popup-trigger" src="img/p4_map.png" width="1920" height="1208" alt="data structure">
+                    </div>
+                </div>
+            </div>
+
+             <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>06</p>
+                    <p>Native Features</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                       <p><b>Camera:</b> <br>
+                            The app allows users to take photos directly within the app to create posts.
+                        </p>
+                        <p><b>GPS: </b> <br>
+                            Users can locate their current location on the Map Screen. SpotShare will also provide location-based recommendations by displaying nearby posts within a specific distance.
+                        </p>
+                         <p><b>Gesture Handling: </b> <br>
+                            SpotShare makes use of native touch gestures to provide a smooth user experience. For example, pinch-to-zoom is used to zoom in on images in posts. A swipe gesture is used to delete posts. Double-tap is used to like post and trigger heart animation.
+                        </p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                            <img class="popup-trigger" src="img/p4_features.png" width="1920" height="1208" alt="different features screenshots">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+
+                     <div class="card card-container">
+                        <a href="project5.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project5.png" alt="FurEver Friends Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>FUREVER FRIENDS</h4>
+                                <p class="work-subtitle">Full-stack Intelligent Pet Adoption Platform</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project6.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project6.jpg" alt="style sketch Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>STYLE SKETCH</h4>
+                                <p class="work-subtitle">Interactive Painting with Intelligent Generation</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project7.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project7.jpg" alt="bank campaign prediction website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>BANK CAMPAIGN PREDICTION</h4>
+                                <p class="work-subtitle">Predicting Term Deposit Subscription</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card card-container">
+                        <a href="project1.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project1.jpg" alt="Melodic Ink Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>MELODIC INK</h4>
+                                <p class="work-subtitle">Interactive Art Installation with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project2.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project2.png" alt="Garage Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>GARAGE WEB</h4>
+                                <p class="work-subtitle">Company Web Design and Development</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project3.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/p3_title.png" alt="EnviroSaver Toy">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>ENVIROSAVER</h4>
+                                <p class="work-subtitle">Educational Toy with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
+
+        <div id="img-popup" class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+    </main>
+
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+    <script src="js/otherWorkCarousel.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

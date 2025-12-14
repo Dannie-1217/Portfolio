@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv="refresh" content="0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+    </header>
+
+   <main>
+        <h1>ENVIROSAVER</h1>
+        <h2>Interactive Educational Toy</h2>
+        <video width="1920" height="1080" controls aria-describedby="video-description">
+            <source src="video/project3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="video-description">
+            <h2>Video Description</h2>
+            <p>The demo video of the EnviroSaver</p>
+        </div>
+
+        <p>
+            EnviroSaver is a sensor-driven educational toy designed to teach children about environmental conservation through interactive play. Completed by a four-person team for IAT 267, I developed all technical components — including Arduino sensor logic, motor control, LED feedback, and the Processing interface that synchronizes animations with physical interactions.
+        </p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Concept Development</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>
+                        The system was designed to teach environmental habits through playful interaction. We designed three modules—waste disposal, water saving, 
+                        and electricity conservation—each powered by real-time sensor input and physical feedback. My initial concept guided the project direction, 
+                        framing the interaction goals and technical requirements.
+                    </p>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p3_sketch.png" width="1920" height="1249" alt="EnviroSaver concept sketch">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Design & Prototyping</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>
+                            We built the system using Arduino, LEDs, motors, and multiple sensors including IR, rotation, and light sensors. I implemented the entire 
+                            technical workflow — wiring, sensor calibration, testing, and core interactive logic. Each sensor triggered specific animations and audio cues within the Processing interface.
+                        </p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p3_schematic&wire.png" width="1920" height="1110" alt="Electrical circuit schematic and Early prototype wiring">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>Technical Development</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>
+                        I programmed Arduino to read multi-sensor inputs and control motors and LED feedback. I also developed the Processing interface, enabling real-time 
+                        communication between hardware and software. This ensured that every physical action — dropping waste, turning off a light, saving water — 
+                        immediately triggered a synchronized digital response. Additionally, I implemented sound effects that react to the player's physical interactions, enhancing engagement and reinforcing feedback through audio cues.
+                    </p>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p3_real-time.png" width="1920" height="1292" alt="Processing and Arduino real-time communication">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>Final Product</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>
+                        The final system delivered an engaging multisensory experience. Children interacted with physical components while receiving visual, audio, 
+                        and LED feedback, successfully blending physical play with interactive digital elements. This project strengthened my abilities in hardware and software 
+                        integration, system logic design, and rapid prototyping.
+                    </p>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/project3.jpg" width="1920" height="1208" alt="EnviroSaver final product thumbnail">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+                    <div class="card card-container">
+                        <a href="project4.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project4.jpg" alt="SpotShare Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>SPOTSHARE</h4>
+                                <p class="work-subtitle">Multimedia & Location Tracking App</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project5.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project5.png" alt="FurEver Friends Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>FUREVER FRIENDS</h4>
+                                <p class="work-subtitle">Full-stack Intelligent Pet Adoption Platform</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project6.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project6.jpg" alt="style sketch Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>STYLE SKETCH</h4>
+                                <p class="work-subtitle">Interactive Painting with Intelligent Generation</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project7.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project7.jpg" alt="bank campaign prediction website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>BANK CAMPAIGN PREDICTION</h4>
+                                <p class="work-subtitle">Predicting Term Deposit Subscription</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project1.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project1.jpg" alt="Melodic Ink Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>MELODIC INK</h4>
+                                <p class="work-subtitle">Interactive Art Installation with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project2.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project2.png" alt="Garage Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>GARAGE WEB</h4>
+                                <p class="work-subtitle">Company Web Design and Development</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
+
+        <div id="img-popup" class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+    <script src="js/otherWorkCarousel.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

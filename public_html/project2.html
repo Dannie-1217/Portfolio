@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css"> 
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+    </header>
+
+   <main>
+        <h1>Garage Web</h1>
+        <h2>E-commerce Website Replica & Frontend Development</h2>
+
+         <img src="img/project2.png" width="1920" height="1080" alt="Responsive design on mobile, tablet and desktop">
+        <div id="video-description">
+            <h2>Video Description</h2>
+            <p>A demonstration of the Garage e-commerce website functionality including browsing, cart interaction, and checkout.</p>
+        </div>
+
+        <p>A responsive e-commerce fashion website replica developed to demonstrate advanced frontend skills. This project focuses on replicating the visual identity of the brand "Garage" while implementing core e-commerce functionalities such as product grids, interactive shopping carts, and form validation using pure HTML, CSS, and JavaScript.</p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Visual Design & Layout</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div> <div>
+                        <p>The goal of this project was to recreate the layout so it feels clean, balanced, and true to the original design. I used CSS Grid and Flexbox to organize key sections like “Shop by Category” and “New Arrivals.”</p>
+                        <p>I focused on creating a clear visual hierarchy and using enough whitespace to let the fashion images stand out, while keeping the navigation simple and easy to follow. The overall look maintains the brand's minimalist and slightly edgy style.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p2_layout.GIF" width="1920" height="1200" alt="Garage Homepage Layout showing grid structure">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Interactive Shopping</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p><b>Product Interaction:</b> <br>
+                        Users can hover over product cards to reveal alternative angles or models, providing a dynamic browsing experience without leaving the main page.</p>
+                        <p><b>Product Details Page:</b> <br>
+                        The detailed view allows users to select sizes and colors. I implemented logic to handle state changes, ensuring the "Add to Cart" button gives visual feedback upon interaction.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p2_productinteraction.GIF" width="1920" height="1200" alt="Product grid hover effects and size selection interface">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>Cart Logic & Checkout</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p><b>Dynamic Cart:</b> <br>
+                            The site features a functional cart system that updates totals and tax calculations in real-time based on the selected items.
+                        </p>
+                        <p><b>Form Validation:</b> <br>
+                            The checkout process includes a comprehensive form for shipping and payment. JavaScript is used to validate user input (e.g., email format, credit card digits) before submission to simulate a secure transaction flow.
+                        </p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p2_checkout.GIF" width="1920" height="1200" alt="Checkout form with validation">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>Responsive Design</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The website is fully responsive across devices. Media queries break points were strategically set to transform the multi-column desktop grid into a streamlined single-column layout for mobile users.</p>
+                        <p>Navigation also adapts, switching from a full header menu to a hamburger menu on smaller screens to optimize touch targets and screen real estate.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                         <img class="popup-trigger" src="img/p2_responsive.png" width="1920" height="1200" alt="Responsive design on mobile and desktop">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+
+                    <div class="card card-container">
+                        <a href="project4.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project4.jpg" alt="SpotShare Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>SPOTSHARE</h4>
+                                <p class="work-subtitle">Multimedia & Location Tracking App</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project5.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project5.png" alt="FurEver Friends Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>FUREVER FRIENDS</h4>
+                                <p class="work-subtitle">Full-stack Intelligent Pet Adoption Platform</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project6.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project6.jpg" alt="style sketch Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>STYLE SKETCH</h4>
+                                <p class="work-subtitle">Interactive Painting with Intelligent Generation</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project7.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project7.jpg" alt="bank campaign prediction website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>BANK CAMPAIGN PREDICTION</h4>
+                                <p class="work-subtitle">Predicting Term Deposit Subscription</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card card-container">
+                        <a href="project1.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project1.jpg" alt="Melodic Ink Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>MELODIC INK</h4>
+                                <p class="work-subtitle">Interactive Art Installation with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project3.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/p3_title.png" alt="EnviroSaver Toy">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>ENVIROSAVER</h4>
+                                <p class="work-subtitle">Educational Toy with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
+
+        <div id="img-popup" class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+    <script src="js/otherWorkCarousel.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+
+    </header>
+
+   <main>
+        <h1>FurEver Friends</h1>
+        <h2>Full-stack Intelligent Pet Adoption Platform</h2>
+        <video width="1920" height="1080" controls aria-describedby="video-description">
+            <source src="video/project5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="video-description">
+            <h2>Video Description</h2>
+            <p>FurEver Friends Full-Stack web demo</p>
+        </div>
+        <p>FurEver Friends is a full-stack pet adoption platform developed as my IAT459: Internet Computing Technologies project, where our two-person team collaboratively built the frontend, backend, and database systems to deliver a complete, role-based adoption workflow.</p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Introduction</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>FurEver Friends is a full-stack pet adoption platform designed for Greater Vancouver. The system supports three user roles — visitors, adopters, and providers — enabling features such as personalized pet recommendations, adoption applications, pet posting, and request processing.
+                    The project emphasizes database design, backend logic, and interactive frontend functionality, offering a complete real-world web application workflow.</p>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p5_intro.png" width="1920" height="1249" alt="Demo image of the FurEver Friends">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Frontend Technology and Features</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The frontend of FurEver Friends is built with HTML, CSS, and JavaScript, providing a responsive and interactive user interface. By integrating AJAX, the platform supports real-time updates and smooth navigation without full page reloads. These technologies work together to deliver a seamless browsing experience across pet listings, dashboards, and detail pages.</p>
+
+                        <p>Key Frontend Capabilities Enabled by the Technology:<br><br>
+
+                        - Dynamic Pet Filtering & Pagination: AJAX allows users to browse pets by type, location, and availability with instant updates.<br><br>
+
+                        - Interactive Image Gallery: JavaScript enables multi-image browsing for each pet, adapting to posts with different numbers of photos.<br><br>
+
+                        - Real-Time Tag Suggestions: As users type preference or pet tags, JavaScript displays matching suggestions retrieved from the server.<br><br>
+
+                        - Responsive User Interface: Clean layouts and CSS styling ensure smooth transitions across dashboards, adoption pages, and detail views.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p5_frontend.png" width="1920" height="1176" alt="The pet details card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>Backend Technology</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The backend of FurEver Friends is powered by PHP, enabling all role-based logic and core application workflows across visitors, adopters, and providers. Through server-side processing, the backend manages authentication, data validation, and communication with the MySQL database to support features such as adoption applications, favorites, pet posting, and profile management. PHP ensures that each action—whether submitting a form, updating user information, or posting a pet—is securely handled and processed with proper session management.</p>
+
+                        <p>Key Backend Capabilities Enabled by the Technology:<br><br>
+
+                        - User Authentication & Session Control: PHP manages secure login, registration, and permission handling for different user types (visitor, adopter, provider).<br><br>
+
+                        - Adoption Workflow Processing: Handles application submission, stores form responses, updates application status, and processes provider decisions (approved/declined).<br><br>
+
+                        - Role-Based Functionality: Ensures adopters can favorite pets and submit requests, while providers can post pets, upload images, and manage incoming applications.<br><br>
+
+                        - Server-Side Validation & Data Handling: Validates form inputs, prevents duplicate accounts, manages profile updates, and ensures reliable data flow between pages.<br><br>
+                    
+                        - CRUD Operations: Supports creating, reading, updating, and deleting data for pets, favorites, preference tags, adoption records, and provider postings.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img class="popup-trigger" src="img/p5_back1.png" width="1920" height="1290" alt="Provider dashboard: process request">
+                        <img class="popup-trigger" src="img/p5_back2.png" width="1920" height="1292" alt="Adopter apply to adopt a dog">
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>Database Development</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>The database is built on a structured MySQL schema that stores users, pets, images, tags, adoption records, and provider postings. Normalized tables and foreign-key relationships help maintain clean data organization and enable key features like personalized recommendations, multi-image support, and adoption status tracking.</p>
+
+                        
+                    </div>
+                    <div class="detail-img-wrapper">
+                            <img class="popup-trigger" src="img/p5_backend.png" width="1920" height="1208" alt="data structure">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+
+                    <div class="card card-container">
+                        <a href="project4.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project4.jpg" alt="SpotShare Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>SPOTSHARE</h4>
+                                <p class="work-subtitle">Multimedia & Location Tracking App</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project6.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project6.jpg" alt="style sketch Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>STYLE SKETCH</h4>
+                                <p class="work-subtitle">Interactive Painting with Intelligent Generation</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project7.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project7.jpg" alt="bank campaign prediction website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>BANK CAMPAIGN PREDICTION</h4>
+                                <p class="work-subtitle">Predicting Term Deposit Subscription</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card card-container">
+                        <a href="project1.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project1.jpg" alt="Melodic Ink Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>MELODIC INK</h4>
+                                <p class="work-subtitle">Interactive Art Installation with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project2.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/project2.png" alt="Garage Website">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>GARAGE WEB</h4>
+                                <p class="work-subtitle">Company Web Design and Development</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card card-container">
+                        <a href="project3.html">
+                            <div class="project-img-wrapper">
+                                <img src="img/p3_title.png" alt="EnviroSaver Toy">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="detail-wrapper">
+                                <h4>ENVIROSAVER</h4>
+                                <p class="work-subtitle">Educational Toy with Technological System</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn right">&#10095;</button>
+            </div>
+        </section>
+
+        <div id="img-popup" class="popup-overlay">
+            <span class="popup-close">&times;</span>
+            <img class="popup-content" id="popup-img">
+        </div>
+    </main>
+
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+    <script src="js/otherWorkCarousel.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
