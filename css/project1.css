@@ -355,7 +355,7 @@
     }  
 }
 
-@media(min-width:100rem){
+@media(min-width:160rem){
     h1{
         text-align: center;
         font-size: 3rem;
