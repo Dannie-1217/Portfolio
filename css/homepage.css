@@ -1221,7 +1221,7 @@ a{
     }
 
     .welcome-text{
-        margin-left:30%;
+        /* margin-left:30%; */
         z-index: 1;
     }
 
@@ -1639,11 +1639,16 @@ a{
     }
 
     h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     h2{
         font-size: 2rem;
+    }
+
+     .welcome-text{
+        margin-left:30%;
+        z-index: 1;
     }
 
     .bio-container p{
@@ -1696,6 +1701,10 @@ a{
 
     .submit-div{
         padding: 1rem 8rem 2.5rem 8rem;
+    }
+
+    .button-div{
+        padding-bottom: 2rem;
     }
 }
 
