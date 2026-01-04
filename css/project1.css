@@ -201,6 +201,14 @@
         transform: scale(1.2);
     }
 
+    .github_link{
+        text-decoration: underline;
+    }
+
+    .github_link:hover, .github_link:focus{
+        color:#f44e21;
+    }
+
     @keyframes zoomIn{
         from{
             opacity: 0;
